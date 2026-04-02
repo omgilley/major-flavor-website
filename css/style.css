@@ -1296,7 +1296,7 @@ h3, h4 {
   .nav-toggle { display: block; }
 
   .hero { padding: 2.5rem 1.5rem; }
-  .hero-logo-img { width: 280px; }
+  .hero-logo-img { width: 85vw; max-width: 420px; }
 
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -1310,7 +1310,7 @@ h3, h4 {
   .nav-links { top: 60px; }
   .hero { min-height: calc(100vh - 60px); padding: 2rem 1.25rem; }
   .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); }
-  .hero-logo-img { width: 200px; }
+  .hero-logo-img { width: 90vw; max-width: 360px; }
   .btn { padding: 0.7rem 1.4rem; font-size: 0.8rem; }
   .menu-items { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; gap: 1rem; }
