@@ -114,21 +114,8 @@ h3, h4 {
   align-items: center;
 }
 
-.nav-brand-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: var(--pink);
-  letter-spacing: -0.01em;
-  transition: text-shadow 0.3s;
-}
-
-.nav-logo:hover .nav-brand-text {
-  text-shadow: 0 0 20px var(--pink-glow);
-}
-
 .logo-img {
-  height: 44px;
+  height: 48px;
   width: auto;
   filter: drop-shadow(0 0 10px var(--pink-glow));
   transition: filter 0.3s;
@@ -310,8 +297,8 @@ h3, h4 {
 }
 
 .hero-logo-img {
-  width: 420px;
-  max-width: 85vw;
+  width: 500px;
+  max-width: 90vw;
   margin-bottom: 2rem;
   animation: pulse-glow 4s ease-in-out infinite;
 }

@@ -13,7 +13,7 @@
   <header class="site-header">
     <nav class="nav-bar">
       <a href="index.html" class="nav-logo">
-        <span class="nav-brand-text">Major Flavor</span>
+        <img src="logo.png" alt="Major Flavor" class="logo-img" />
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
       <ul class="nav-links" id="navLinks">
@@ -27,23 +27,186 @@
   </header>
 
   <div class="page-hero">
+    <img src="logo.png" alt="Major Flavor" style="height:80px; width:auto; margin-bottom:0.75rem; filter:drop-shadow(0 0 20px rgba(255,20,147,0.35));" />
     <h1>Our Menu</h1>
     <p>Soul food with major flavor — served fresh daily</p>
   </div>
 
-  <main style="max-width:900px; margin:0 auto; padding:2rem 2rem 5rem;">
+  <main class="menu-page">
 
-    <div style="text-align:center; margin-bottom:2rem;">
-      <a href="menu.pdf" target="_blank" class="btn btn-primary" style="font-size:1rem; padding:1rem 2.5rem; margin-right:0.5rem;">View Full Menu (PDF)</a>
-      <a href="menu.pdf" download class="btn btn-outline" style="font-size:1rem; padding:1rem 2.5rem;">Download Menu</a>
+    <!-- Quick Nav -->
+    <div class="menu-nav">
+      <a href="#breakfast" class="menu-nav-btn">🍳 Crack of Dawn</a>
+      <a href="#quickies" class="menu-nav-btn">⚡ Quickies</a>
+      <a href="#daily" class="menu-nav-btn">🍤 Daily Dosage</a>
+      <a href="#birds" class="menu-nav-btn">🍗 Birds</a>
+      <a href="#salads" class="menu-nav-btn">🥗 Incarcerated Colds</a>
+      <a href="#desserts" class="menu-nav-btn">🍑 Sweet Like Candy</a>
+      <a href="#drinks" class="menu-nav-btn">🥤 Thirst Trap</a>
+      <a href="#sides" class="menu-nav-btn">🥘 Sides</a>
+      <a href="#sunday" class="menu-nav-btn">💃 Sunday Special</a>
     </div>
 
-    <div style="border-radius:var(--radius); overflow:hidden; border:1px solid rgba(255,255,255,0.06); background:var(--bg-card);">
-      <iframe src="menu.pdf" style="width:100%; height:80vh; border:none; display:block;"></iframe>
+    <!-- SUNDAY SPECIAL PROMO -->
+    <div id="sunday" class="promo-box">
+      <span class="promo-tag">Friends Forever — Sunday Only</span>
+      <h2>Sunday Supper Deal</h2>
+      <p>Includes choice of 2 sides, bread & beverage</p>
+      <p>Grilled Steak · Grilled Lambchops</p>
+      <div class="promo-options">
+        <div class="promo-option">
+          <strong>$30</strong>
+          <span>1 Entree</span>
+        </div>
+        <div class="promo-option">
+          <strong>$50</strong>
+          <span>2 Entrees</span>
+        </div>
+      </div>
     </div>
 
-    <div style="text-align:center; margin-top:2.5rem;">
-      <p style="color:var(--text-muted); margin-bottom:1rem; font-size:0.95rem;">Ready to order?</p>
+    <!-- CRACK OF DAWN -->
+    <section id="breakfast" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍳</span>
+        <h2>Crack of Dawn</h2>
+      </div>
+      <p class="menu-section-sub">Served 5:00am – 11:00am</p>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Veggie Omelet</div><div class="menu-item-desc">Grits or Hashbrowns</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Major Meat Omelet</div><div class="menu-item-desc">Toast and Meat of Choice · Grits or Hashbrowns</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">3.2 Cracked Eggs Breakfast</div><div class="menu-item-desc">Toast and Meat of Choice · Grits or Hashbrowns</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">4.2 Flapjacks</div><div class="menu-item-desc">Side of Meat available</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Steak & 2 Cracked Eggs</div><div class="menu-item-desc">Toast · Grits or Hashbrowns</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Gills & Grits</div><div class="menu-item-desc">Served with Toast</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Shrimp & Grits</div><div class="menu-item-desc">Grilled or Fried Shrimp · Served with Toast</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Bussin Breakfast Sandwich</div><div class="menu-item-desc">A hearty morning sandwich</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Birds & Cakes</div><div class="menu-item-desc">Chicken & Flapjacks</div></div><div class="menu-item-price">$11</div></div>
+      </div>
+    </section>
+
+    <!-- QUICKIES -->
+    <section id="quickies" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">⚡</span>
+        <h2>Quickies</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fried Snow Crabs</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fried Mushrooms</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fried Green Tomatoes</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">5 Piece Birds</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Frazier Fat Fry</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">3 Tiny Burgers</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Crab Claws</div></div><div class="menu-item-price">$11</div></div>
+      </div>
+    </section>
+
+    <!-- DAILY DOSAGE -->
+    <section id="daily" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍤</span>
+        <h2>Daily Dosage Meals</h2>
+      </div>
+      <p class="menu-section-sub">All trays available with Fries, Onion Rings, or Fried Okra</p>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">7 Piece Wing Tray</div><div class="menu-item-desc">Fries, Onion Rings, or Fried Okra</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Freshly Battered Tenders</div><div class="menu-item-desc">Hand-battered fresh daily</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fried Fish Tray</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Shrimp (Po-Boy) Tray</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Cook's Club Tray</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Bussin Bread Burger</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Westside Philly</div></div><div class="menu-item-price">$7 / $11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">3 Tiny Burgers Tray</div></div><div class="menu-item-price">$7 / $11</div></div>
+      </div>
+    </section>
+
+    <!-- BIRDS -->
+    <section id="birds" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍗</span>
+        <h2>Birds</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">7 Piece Birds</div></div><div class="menu-item-price">$8</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">11 Piece Birds</div></div><div class="menu-item-price">$12</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">15 Piece Birds</div></div><div class="menu-item-price">$16</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">20 Piece Birds</div></div><div class="menu-item-price">$21</div></div>
+      </div>
+      <div class="flavors-tag" style="margin-top:1rem;">
+        <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted);">Major Bird Flavors:</span>
+        <span class="flavor-pill">RockCandy</span>
+        <span class="flavor-pill">Hot</span>
+        <span class="flavor-pill">Garlic Parm</span>
+        <span class="flavor-pill">Lemon Pepper</span>
+        <span class="flavor-pill">Barbeque</span>
+      </div>
+    </section>
+
+    <!-- INCARCERATED COLDS -->
+    <section id="salads" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🥗</span>
+        <h2>Incarcerated Colds</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Salad</div><div class="menu-item-desc">Add Grilled Shrimp or Chicken +$2.99</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Bird Salad</div></div><div class="menu-item-price">$7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Tuna Salad</div></div><div class="menu-item-price">$5</div></div>
+      </div>
+    </section>
+
+    <!-- SWEET LIKE CANDY -->
+    <section id="desserts" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍑</span>
+        <h2>Sweet Like Candy</h2>
+      </div>
+      <p class="menu-section-sub">When Available — made fresh in-house</p>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Sweet Slices or Fredibles</div></div><div class="menu-item-price">2 for $7</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Banana Split</div></div><div class="menu-item-price">$5</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Rock's Cookie Crumble</div></div><div class="menu-item-price">$5</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Tip's Fruit Chips</div></div><div class="menu-item-price">$11</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fruity Bowl With Flavor</div></div><div class="menu-item-price">$5</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Homemade Peach Cobbler</div></div><div class="menu-item-price">$5</div></div>
+      </div>
+    </section>
+
+    <!-- THIRST TRAP -->
+    <section id="drinks" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🥤</span>
+        <h2>Thirst Trap</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Popular Punch</div></div><div class="menu-item-price">Med $2 / Lg $3</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Lusting Lemonade</div></div><div class="menu-item-price">Ask Us</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Tempting Tea</div></div><div class="menu-item-price">Ask Us</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Bottle Drinks</div></div><div class="menu-item-price">$2.50</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Coffee</div></div><div class="menu-item-price">$2</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Hookah</div></div><div class="menu-item-price">$25</div></div>
+      </div>
+    </section>
+
+    <!-- SIDES -->
+    <section id="sides" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🥘</span>
+        <h2>Sides</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Homemade Mac & Cheese</div></div><div class="menu-item-price">—</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Homemade Mashed Potatoes</div></div><div class="menu-item-price">—</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Grilled or Fried Asparagus</div></div><div class="menu-item-price">—</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Green Beans</div></div><div class="menu-item-price">—</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Yellow Rice</div></div><div class="menu-item-price">—</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Side Salad</div></div><div class="menu-item-price">—</div></div>
+        <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Broccoli</div></div><div class="menu-item-price">—</div></div>
+      </div>
+    </section>
+
+    <div style="text-align:center; margin-top:3rem;">
       <a href="order.html" class="btn btn-primary" style="font-size:1.05rem; padding:1rem 2.5rem;">Order Online</a>
     </div>
 
