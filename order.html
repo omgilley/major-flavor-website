@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Order Online | Major Flavor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&family=Kaushan+Script&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -28,77 +28,371 @@
 
   <div class="page-hero">
     <h1>Order Online</h1>
-    <p>Fresh soul food, ready when you are</p>
+    <p>Build your order and call us to confirm</p>
   </div>
 
-  <main class="order-page">
+  <main class="order-builder">
 
-    <!-- Online Order Embed Placeholder -->
-    <div class="order-embed-box">
-      <div class="placeholder-icon">🛒</div>
-      <h2>Online Ordering Coming Soon</h2>
-      <p>
-        We're setting up our online order system through <strong style="color:var(--gold-light);">Square</strong> — it'll be live very soon!<br/>
-        In the meantime, you can call us to place your order or use one of the options below.
-      </p>
-      <!--
-        ═══════════════════════════════════════════════
-        SQUARE ONLINE ORDERING — INTEGRATION POINT
-        ═══════════════════════════════════════════════
-        When Square Online is ready, replace this block with:
-
-        Option A — Square Online Store (full page redirect):
-          <a href="https://YOUR-SQUARE-LINK.square.site" class="btn btn-primary btn-green" style="font-size:1.1rem; padding:1rem 2.5rem;">
-            Order Now on Square
-          </a>
-
-        Option B — Embed Square Order Widget (if Square provides embed code):
-          Paste the <script> and <div id="square-..."> embed code here.
-
-        Option C — Link to Square for Restaurants or another Square ordering page.
-        ═══════════════════════════════════════════════
-      -->
-      <a href="tel:7698008706" class="btn btn-primary" style="margin-top:1rem;">Call to Order: (769) 800-8706</a>
+    <!-- Quick Nav -->
+    <div class="menu-nav">
+      <a href="#breakfast" class="menu-nav-btn">🍳 Crack of Dawn</a>
+      <a href="#quickies" class="menu-nav-btn">⚡ Quickies</a>
+      <a href="#daily" class="menu-nav-btn">🍤 Daily Dosage</a>
+      <a href="#birds" class="menu-nav-btn">🍗 Birds</a>
+      <a href="#salads" class="menu-nav-btn">🥗 Salads</a>
+      <a href="#desserts" class="menu-nav-btn">🍑 Desserts</a>
+      <a href="#drinks" class="menu-nav-btn">🥤 Drinks</a>
     </div>
 
-    <!-- Alternative Order Methods -->
-    <h2 style="margin-top:3rem; margin-bottom:1rem;">Other Ways to Order</h2>
-    <div class="order-alts">
-      <div class="order-alt-card">
-        <div class="alt-icon">📞</div>
-        <h3>Call Us</h3>
-        <p>Phone orders accepted during business hours</p>
-        <a href="tel:7698008706" class="btn btn-primary">(769) 800-8706</a>
+    <!-- CRACK OF DAWN -->
+    <section id="breakfast" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍳</span>
+        <h2>Crack of Dawn</h2>
       </div>
-      <div class="order-alt-card">
-        <div class="alt-icon">🚗</div>
-        <h3>Delivery</h3>
-        <p>RockCandy delivers for a fee. Call to arrange.</p>
-        <a href="tel:2282358421" class="btn btn-outline">(228) 235-8421</a>
+      <p class="menu-section-sub">Served 5:00am – 11:00am</p>
+      <div class="menu-items">
+        <div class="order-item" data-name="Veggie Omelet" data-price="7">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Veggie Omelet</div>
+            <div class="menu-item-desc">Grits or Hashbrowns</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$7</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="Major Meat Omelet" data-price="11">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Major Meat Omelet</div>
+            <div class="menu-item-desc">Toast and Meat of Choice · Grits or Hashbrowns</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$11</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="3.2 Cracked Eggs Breakfast" data-price="11">
+          <div class="menu-item-info">
+            <div class="menu-item-name">3.2 Cracked Eggs Breakfast</div>
+            <div class="menu-item-desc">Toast and Meat of Choice · Grits or Hashbrowns</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$11</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="4.2 Flapjacks" data-price="7">
+          <div class="menu-item-info">
+            <div class="menu-item-name">4.2 Flapjacks</div>
+            <div class="menu-item-desc">Side of Meat available (+$4)</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$7</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="Steak & 2 Cracked Eggs" data-price="11">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Steak & 2 Cracked Eggs</div>
+            <div class="menu-item-desc">Toast · Grits or Hashbrowns</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$11</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="Gills & Grits" data-price="7">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Gills & Grits</div>
+            <div class="menu-item-desc">Served with Toast</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$7</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="Shrimp & Grits" data-price="11">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Shrimp & Grits</div>
+            <div class="menu-item-desc">Grilled or Fried Shrimp · Served with Toast</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$11</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="Bussin Breakfast Sandwich" data-price="7">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Bussin Breakfast Sandwich</div>
+            <div class="menu-item-desc">A hearty morning sandwich</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$7</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
+        <div class="order-item" data-name="Birds & Cakes" data-price="11">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Birds & Cakes</div>
+            <div class="menu-item-desc">Chicken & Flapjacks</div>
+          </div>
+          <div class="order-item-right">
+            <div class="menu-item-price">$11</div>
+            <button class="add-btn" aria-label="Add to cart">+</button>
+          </div>
+        </div>
       </div>
-      <div class="order-alt-card">
-        <div class="alt-icon">📍</div>
-        <h3>Walk In</h3>
-        <p>4219 Main St, Moss Point, MS — come see us!</p>
-        <a href="https://maps.google.com/?q=4219+Main+St+Moss+Point+MS" target="_blank" class="btn btn-outline">Get Directions</a>
-      </div>
-    </div>
+    </section>
 
-    <!-- Hours reminder -->
-    <div class="hours-box" style="margin-top:3rem;">
-      <h3>Hours of Operation</h3>
-      <p>Mon & Thu: 5:00am – 8:00pm</p>
-      <p>Tue & Wed: <span style="color:var(--pink);">CLOSED</span></p>
-      <p>Fri & Sat: 5:00am – 10:00pm</p>
-      <p>Sun: 11:00am – 10:00pm</p>
-    </div>
+    <!-- QUICKIES -->
+    <section id="quickies" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">⚡</span>
+        <h2>Quickies</h2>
+      </div>
+      <div class="menu-items">
+        <div class="order-item" data-name="Fried Snow Crabs" data-price="11">
+          <div class="menu-item-info"><div class="menu-item-name">Fried Snow Crabs</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$11</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Fried Mushrooms" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Fried Mushrooms</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Fried Green Tomatoes" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Fried Green Tomatoes</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="5 Piece Birds" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">5 Piece Birds</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Frazier Fat Fry" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Frazier Fat Fry</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="3 Tiny Burgers" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">3 Tiny Burgers</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Crab Claws" data-price="11">
+          <div class="menu-item-info"><div class="menu-item-name">Crab Claws</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$11</div><button class="add-btn">+</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DAILY DOSAGE -->
+    <section id="daily" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍤</span>
+        <h2>Daily Dosage Meals</h2>
+      </div>
+      <p class="menu-section-sub">All trays with Fries, Onion Rings, or Fried Okra</p>
+      <div class="menu-items">
+        <div class="order-item" data-name="7 Piece Wing Tray" data-price="11">
+          <div class="menu-item-info">
+            <div class="menu-item-name">7 Piece Wing Tray</div>
+            <div class="menu-item-desc">Fries, Onion Rings, or Fried Okra</div>
+          </div>
+          <div class="order-item-right"><div class="menu-item-price">$11</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Freshly Battered Tenders" data-price="7">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Freshly Battered Tenders</div>
+            <div class="menu-item-desc">Hand-battered fresh daily</div>
+          </div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Fried Fish Tray" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Fried Fish Tray</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Shrimp (Po-Boy) Tray" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Shrimp (Po-Boy) Tray</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Cook's Club Tray" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Cook's Club Tray</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Bussin Bread Burger" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Bussin Bread Burger</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Westside Philly" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Westside Philly</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="3 Tiny Burgers Tray" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">3 Tiny Burgers Tray</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIRDS -->
+    <section id="birds" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍗</span>
+        <h2>Birds</h2>
+      </div>
+      <div class="menu-items">
+        <div class="order-item" data-name="7 Piece Birds" data-price="8">
+          <div class="menu-item-info"><div class="menu-item-name">7 Piece Birds</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$8</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="11 Piece Birds" data-price="12">
+          <div class="menu-item-info"><div class="menu-item-name">11 Piece Birds</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$12</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="15 Piece Birds" data-price="16">
+          <div class="menu-item-info"><div class="menu-item-name">15 Piece Birds</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$16</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="20 Piece Birds" data-price="21">
+          <div class="menu-item-info"><div class="menu-item-name">20 Piece Birds</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$21</div><button class="add-btn">+</button></div>
+        </div>
+      </div>
+      <div class="flavors-tag" style="margin-top:1rem;">
+        <span style="font-size:0.85rem; font-weight:700; color:var(--text-muted);">Flavors:</span>
+        <span class="flavor-pill">RockCandy</span>
+        <span class="flavor-pill">Hot</span>
+        <span class="flavor-pill">Garlic Parm</span>
+        <span class="flavor-pill">Lemon Pepper</span>
+        <span class="flavor-pill">Barbeque</span>
+      </div>
+    </section>
+
+    <!-- SALADS -->
+    <section id="salads" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🥗</span>
+        <h2>Incarcerated Colds</h2>
+      </div>
+      <div class="menu-items">
+        <div class="order-item" data-name="Salad" data-price="7">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Salad</div>
+            <div class="menu-item-desc">Add Grilled Shrimp or Chicken +$2.99</div>
+          </div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Bird Salad" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Bird Salad</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Tuna Salad" data-price="5">
+          <div class="menu-item-info"><div class="menu-item-name">Tuna Salad</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$5</div><button class="add-btn">+</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SWEET LIKE CANDY -->
+    <section id="desserts" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🍑</span>
+        <h2>Sweet Like Candy</h2>
+      </div>
+      <p class="menu-section-sub">When Available — made fresh in-house</p>
+      <div class="menu-items">
+        <div class="order-item" data-name="Sweet Slices or Fredibles (2)" data-price="7">
+          <div class="menu-item-info"><div class="menu-item-name">Sweet Slices or Fredibles</div></div>
+          <div class="order-item-right"><div class="menu-item-price">2 for $7</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Banana Split" data-price="5">
+          <div class="menu-item-info"><div class="menu-item-name">Banana Split</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$5</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Rock's Cookie Crumble" data-price="5">
+          <div class="menu-item-info"><div class="menu-item-name">Rock's Cookie Crumble</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$5</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Tip's Fruit Chips" data-price="11">
+          <div class="menu-item-info"><div class="menu-item-name">Tip's Fruit Chips</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$11</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Fruity Bowl With Flavor" data-price="5">
+          <div class="menu-item-info"><div class="menu-item-name">Fruity Bowl With Flavor</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$5</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Homemade Peach Cobbler" data-price="5">
+          <div class="menu-item-info"><div class="menu-item-name">Homemade Peach Cobbler</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$5</div><button class="add-btn">+</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THIRST TRAP -->
+    <section id="drinks" class="menu-section">
+      <div class="menu-section-header">
+        <span class="section-icon">🥤</span>
+        <h2>Thirst Trap</h2>
+      </div>
+      <div class="menu-items">
+        <div class="order-item" data-name="Popular Punch (Med)" data-price="2">
+          <div class="menu-item-info"><div class="menu-item-name">Popular Punch (Med)</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$2</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Popular Punch (Lg)" data-price="3">
+          <div class="menu-item-info"><div class="menu-item-name">Popular Punch (Lg)</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$3</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Bottle Drink" data-price="2.50">
+          <div class="menu-item-info"><div class="menu-item-name">Bottle Drink</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$2.50</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Coffee" data-price="2">
+          <div class="menu-item-info"><div class="menu-item-name">Coffee</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$2</div><button class="add-btn">+</button></div>
+        </div>
+        <div class="order-item" data-name="Hookah" data-price="25">
+          <div class="menu-item-info"><div class="menu-item-name">Hookah</div></div>
+          <div class="order-item-right"><div class="menu-item-price">$25</div><button class="add-btn">+</button></div>
+        </div>
+      </div>
+    </section>
 
   </main>
+
+  <!-- FLOATING CART BUTTON -->
+  <button class="cart-fab" id="cartFab" style="display:none;">
+    <span class="cart-fab-icon">🛒</span>
+    <span class="cart-fab-count" id="cartFabCount">0</span>
+  </button>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>Your Order</h3>
+      <button class="cart-close" id="cartClose">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="cart-empty">Your cart is empty</p>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+      <a href="tel:7698008706" class="btn btn-primary" style="width:100%; text-align:center; font-size:1rem; margin-top:0.75rem;">
+        Call to Place Order: (769) 800-8706
+      </a>
+      <p style="font-size:0.75rem; color:var(--text-dim); margin-top:0.5rem; text-align:center;">
+        Share your order details when you call
+      </p>
+      <button class="btn btn-ghost" id="clearCart" style="width:100%; margin-top:0.5rem; font-size:0.8rem;">Clear Cart</button>
+    </div>
+  </aside>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="logo.png" alt="Major Flavor" style="height:50px; width:auto; filter:drop-shadow(0 0 10px rgba(255,61,154,0.3));" />
+        <img src="logo.png" alt="Major Flavor" style="height:50px; width:auto; filter:drop-shadow(0 0 10px rgba(255,20,147,0.3));" />
         <p>Soul Food Sold Daily</p>
       </div>
       <div class="footer-info">
@@ -117,5 +411,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
