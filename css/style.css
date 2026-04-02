@@ -3,7 +3,7 @@
    Dark + Bright Pink + Neon Green + Clean Modern
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&family=Pacifico&display=swap');
 
 :root {
   --pink: #FF1493;
@@ -42,10 +42,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* All headings — clean sans-serif */
-h1, h2, h3, h4 {
-  font-family: 'Inter', sans-serif;
+/* Headlines — Playfair Display (luxe editorial serif) */
+h1, h2 {
+  font-family: 'Playfair Display', serif;
   font-weight: 800;
+  color: var(--text-bright);
+}
+
+/* Sub-headings — clean Inter */
+h3, h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   color: var(--text-bright);
 }
 
@@ -105,6 +112,19 @@ h1, h2, h3, h4 {
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+.nav-brand-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--pink);
+  letter-spacing: -0.01em;
+  transition: text-shadow 0.3s;
+}
+
+.nav-logo:hover .nav-brand-text {
+  text-shadow: 0 0 20px var(--pink-glow);
 }
 
 .logo-img {
@@ -170,8 +190,16 @@ h1, h2, h3, h4 {
   position: relative;
   overflow: hidden;
   padding: 4rem 2rem;
-  gap: 4rem;
-  flex-wrap: wrap;
+}
+
+.hero-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  animation: fadeUp 0.7s ease both;
+  max-width: 700px;
 }
 
 .hero-bg-shapes { position: absolute; inset: 0; pointer-events: none; }
@@ -213,27 +241,36 @@ h1, h2, h3, h4 {
 }
 
 .hero-tag {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--green);
-  letter-spacing: 0.15em;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   display: block;
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
   color: var(--text-bright);
-  line-height: 1.1;
+  line-height: 1.15;
   margin-bottom: 1.25rem;
   font-weight: 900;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .hero-title em {
-  font-style: italic;
+  font-family: 'Pacifico', cursive;
+  font-style: normal;
+  font-weight: 400;
   color: var(--pink);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.1em;
 }
 
 .hero-sub {
@@ -248,12 +285,14 @@ h1, h2, h3, h4 {
   gap: 0.75rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .hero-hours {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .hero-hours span {
@@ -272,8 +311,9 @@ h1, h2, h3, h4 {
 }
 
 .hero-logo-img {
-  width: 340px;
-  max-width: 90vw;
+  width: 420px;
+  max-width: 85vw;
+  margin-bottom: 2rem;
   animation: pulse-glow 4s ease-in-out infinite;
 }
 
@@ -1003,10 +1043,8 @@ h1, h2, h3, h4 {
   .nav-links.open { display: flex; }
   .nav-toggle { display: block; }
 
-  .hero { flex-direction: column; padding: 2.5rem 1.5rem; text-align: center; gap: 2rem; }
-  .hero-cta { justify-content: center; }
-  .hero-hours { justify-content: center; }
-  .hero-logo-img { width: 260px; }
+  .hero { padding: 2.5rem 1.5rem; }
+  .hero-logo-img { width: 280px; }
 
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
@@ -1020,7 +1058,7 @@ h1, h2, h3, h4 {
   .nav-links { top: 60px; }
   .hero { min-height: calc(100vh - 60px); padding: 2rem 1.25rem; }
   .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); }
-  .hero-logo-img { width: 220px; }
+  .hero-logo-img { width: 200px; }
   .btn { padding: 0.7rem 1.4rem; font-size: 0.8rem; }
   .menu-items { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; gap: 1rem; }
